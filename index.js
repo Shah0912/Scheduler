@@ -12,7 +12,7 @@ app.get('/',(req,res)=>{
     res.send('<h1>Welcome<h1>')
 });
 
-
+app.use('/log', require('./routes/log/logger'));
 
 
 app.listen(PORT,() =>{
