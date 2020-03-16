@@ -9,7 +9,31 @@
         <link rel="stylesheet" href="">
     </head>
     <body>
-        <h1></h1>
+        <h1>Logger</h1>
+
+        <form>
+            <fieldset>
+                <legend>Details</legend>
+                <label for="activity">ACTIVITY</label>
+                <select id="activity">
+                    <option value="Play">Play</option>
+                    <option value="Read">Read</option>
+                    <option value="Study">Study</option>
+                    <option value="Youtube">Youtube</option>
+                    <option value="Eat">Eat</option>
+                    <option value="Instagram">Instagram</option>
+                    <option value="Others">Others</option>
+                </select><br><br>
+                <label for="date">DATE</label>
+                <input type="date" id = "date" name = "date"><br><br>
+                <label for="startTime">Start Time</label>
+                <input type="time" id = "stime" name = "stime">
+                <label for="EndTime">End Time</label>
+                <input type="time" id = "etime" name = "etime"><br><br>
+                <input type="submit">
+            </fieldset>
+        </form>
+        
         <script src="" async defer></script>
     </body>
 </html>

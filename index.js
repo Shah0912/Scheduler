@@ -3,12 +3,13 @@ const path = require('path');
 
 const app = express();
 const router = express.Router();
+app.set('view engine', 'ejs');
 
 
 const PORT = process.env.PORT || 5000;
 
 app.get('/', (req,res)=>{
-    res.send()
+    res.render('home');
 });
 
 app.listen(PORT,() =>{
