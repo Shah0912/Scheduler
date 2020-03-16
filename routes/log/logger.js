@@ -5,4 +5,9 @@ router.get('/', (req,res)=>{
     res.render('home');
 });
 
+router.post('/submit', (req,res)=>{
+    //Handle post req.
+    console.log(req);
+});
+
 module.exports = router;
