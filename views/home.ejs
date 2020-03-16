@@ -11,11 +11,11 @@
     <body>
         <h1>Logger</h1>
 
-        <form>
+        <form method="POST" action="/log/submit">
             <fieldset>
                 <legend>Details</legend>
                 <label for="activity">ACTIVITY</label>
-                <select id="activity">
+                <select id="activity" required>
                     <option value="Play">Play</option>
                     <option value="Read">Read</option>
                     <option value="Study">Study</option>
@@ -25,11 +25,11 @@
                     <option value="Others">Others</option>
                 </select><br><br>
                 <label for="date">DATE</label>
-                <input type="date" id = "date" name = "date"><br><br>
+                <input type="date" id = "date" name = "date" required><br><br>
                 <label for="startTime">Start Time</label>
-                <input type="time" id = "stime" name = "stime">
+                <input type="time" id = "stime" name = "stime" required>
                 <label for="EndTime">End Time</label>
-                <input type="time" id = "etime" name = "etime"><br><br>
+                <input type="time" id = "etime" name = "etime" required><br><br>
                 <input type="submit">
             </fieldset>
         </form>

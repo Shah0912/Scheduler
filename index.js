@@ -6,11 +6,14 @@ const router = express.Router();
 app.set('view engine', 'ejs');
 
 
-const PORT = process.env.PORT || 5000;
 
-app.get('/', (req,res)=>{
-    res.render('home');
+const PORT = process.env.PORT || 5000;
+app.get('/',(req,res)=>{
+    res.send('<h1>Welcome<h1>')
 });
+
+
+
 
 app.listen(PORT,() =>{
     console.log(`Server Started on port: ${PORT}`);
