@@ -7,3 +7,5 @@ First the user will be showed a landing page with 2 options:
 So we need 3 pages out of which 2 are static. The landing page and the Form page are static.
 
 Mysql Tables: Users, Data for a particular activity, 
+
+id, activity, date, duration.
