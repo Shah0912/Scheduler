@@ -13,15 +13,25 @@
 
             function drawChart() {
 
-            var data = google.visualization.arrayToDataTable([
-            ['Task', 'Hours per Day'],
-            ['Work',     11],
-            ['Eat',      2],
-            ['Commute',  2],
-            ['Watch TV', 2],
-            ['Sleep',    7]
-            ]);
-
+            //var data = google.visualization.arrayToDataTable(
+            //[['Task', 'Hours per Day'],['Work',     11],['Eat',      2],['Commute',  2],['Watch TV', 2],['Sleep',    7]]);
+            /*var t = <%-JSON.stringify(temp)%>;
+            console.log(t);
+            console.log('Hello');
+            console.log(t);
+            */
+            var t = <%-JSON.stringify(temp)%>;
+            let arr = t.split(".");            
+            console.log(arr);
+            let send = [['Activity','Time']];
+            for(i = 0;i<arr.length-1;i++)
+            {
+                let t1 = arr[i].split(' ');
+                t1[1] = parseFloat(t1[1])/60;
+                send.push(t1);
+            }
+            console.log(send);
+            var data = google.visualization.arrayToDataTable(send);
             var options = {
                 title: 'My Daily Activities'
             };

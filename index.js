@@ -19,8 +19,10 @@ app.set('view engine', 'ejs');
 
 const PORT = process.env.PORT || 5000;
 app.get('/',(req,res)=>{
-    res.render('landing')
+    res.render('landing',{ foo:'Aditya'});
 });
+
+
 
 app.use('/log', require('./routes/log/logger'));
 
