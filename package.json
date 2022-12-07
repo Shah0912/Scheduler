@@ -20,7 +20,7 @@
   "homepage": "https://github.com/Shah0912/Scheduler#readme",
   "dependencies": {
     "ejs": "^3.0.1",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "mysql": "^2.18.1",
     "popups": "^1.1.3"
   },
